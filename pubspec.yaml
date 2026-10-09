@@ -1,0 +1,22 @@
+name: hb_sense_app
+description: Non-invasive hemoglobin detection companion app (ESP32 BLE -> Flask ML backend)
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_blue_plus: ^1.32.12   # BLE central (scan/connect/read/write/notify)
+  google_fonts: ^6.2.1                 # distinctive serif for the display type
+  http: ^1.2.1                  # calls to Flask /predict
+  permission_handler: ^11.3.1   # Android 12+ requires runtime BLUETOOTH_SCAN/CONNECT permission
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true

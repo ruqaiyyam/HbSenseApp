@@ -1,0 +1,50 @@
+# --- Python / Flask backend ---
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+.env
+*.egg-info/
+
+# ML model — share separately, don't commit large binaries
+backend/*.joblib
+
+# --- Flutter / Dart app ---
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+*.iml
+.idea/
+
+# Android
+android/.gradle/
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/local.properties
+android/key.properties
+*.jks
+*.keystore
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+
+# --- Arduino / firmware ---
+*.hex
+*.bin
+*.elf
+
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
