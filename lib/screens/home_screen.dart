@@ -16,7 +16,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final _ble = BleService();
-  final _api = ApiService(baseUrl: 'your url');
+  final _api = ApiService(baseUrl: 'https://hbsenseapp.onrender.com');
 
   final _ageController = TextEditingController(text: '30');
   String _gender = 'M';
